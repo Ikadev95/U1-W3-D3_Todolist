@@ -49,12 +49,17 @@ form.onsubmit = function (event) {
 
     const Checkbox = document.querySelectorAll(".checkbox");
     // seleziono tutti i checkbox
+
     Checkbox.forEach((check) => {
-        if (check) {
-            check.addEventListener("click", function () {
-                check.parentElement.style.display = "none";
-            });
-        }
+        check.addEventListener("click", function () {
+            const label = check.nextElementSibling;
+            // Seleziono il prossimo elemento fratello
+            if (label) {
+                console.log(label.innerText);
+                // Applica lo stile al testo del <label>
+                label.style.textDecoration = "line-through";
+            }
+            check.style.display = "none";
+        });
     });
-    // li ciclo e se cliccati li faccio scomparire
 };
