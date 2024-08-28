@@ -11,7 +11,7 @@ body{
     font-family: "Poppins", sans-serif;
 } 
 main{
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 40px;
 }
@@ -36,12 +36,15 @@ input[type="text"]{
     border-radius: 8px;
     font-family: "Poppins", sans-serif;
     margin: 4px 4px;
-    width: 200px;
+    width: 300px;
 }
 form{
     margin: 0 auto;
     text-align: center;
     margin-top: 40px;
+    background-color: #F6F6F6;
+    padding: 36px 24px;
+    border-radius: 16px;
 }
 #addListItem{
     padding: 8px 0.9rem;
@@ -79,4 +82,13 @@ input[type="checkbox"] {
     position: absolute;
     top:0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
