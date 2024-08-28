@@ -58,6 +58,7 @@ form.onsubmit = function (event) {
                 console.log(label.innerText);
                 // Applica lo stile al testo del <label>
                 label.style.textDecoration = "line-through";
+                label.style.color = "grey";
             }
             check.style.display = "none";
         });

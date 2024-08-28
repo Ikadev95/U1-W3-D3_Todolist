@@ -36,7 +36,9 @@ input[type="text"]{
     border-radius: 8px;
     font-family: "Poppins", sans-serif;
     margin: 4px 4px;
-    width: 300px;
+    width: 240px;
+    margin-bottom: 12px;
+    margin-top: 8px;
 }
 form{
     margin: 0 auto;
