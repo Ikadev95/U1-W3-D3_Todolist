@@ -45,8 +45,10 @@ form{
     text-align: center;
     margin-top: 40px;
     background-color: #F6F6F6;
-    padding: 36px 24px;
+    padding: 36px 32px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 #addListItem{
     padding: 8px 0.9rem;
@@ -101,4 +103,9 @@ input[type="checkbox"] {
 .fa-solid {
     margin-left: 8px;
     color:#161616;
+}
+.fa-xmark{
+    display: block;
+    align-self: flex-end;
+    padding: 8px;
 }

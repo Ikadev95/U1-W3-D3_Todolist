@@ -12,6 +12,12 @@ const form = document.querySelector("form");
 let counter = 1;
 //contatore per generare gli ID diversi
 
+const close = form.querySelector("form > i");
+close.addEventListener("click", function () {
+    const modale = document.querySelector(".modalecontainer");
+    modale.style.display = "none";
+});
+
 form.onsubmit = function (event) {
     event.preventDefault();
     //elimino il default così non si ricarica la pagina
@@ -67,12 +73,12 @@ form.onsubmit = function (event) {
         });
     });
 
-    const trash = document.querySelectorAll("i");
-    console.log(trash.nextElementSibling);
-    function GoTrash() {
-        trash.parentNode.style.display = "none";
-    }
+    const trash = document.querySelectorAll(".Item > i");
+    console.log(trash);
     trash.forEach((element) => {
-        element.addEventListener("click", GoTrash);
+        element.addEventListener("click", function () {
+            console.log(element.parentNode);
+            element.parentNode.style.display = "none";
+        });
     });
 };
