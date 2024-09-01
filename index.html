@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>To-do-list</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <main>
@@ -12,9 +19,12 @@
             <p>In questa pagina puoi creare e gestire facilmente una to-do list per organizzare al meglio le tue attività quotidiane!</p>
             <button id="addListItem">+</button>
             <div id="container">
-                <!--    <div class="Item">
-                    <input type="checkbox" id="task" value="ok" class="checkbox" />
-                    <label for="task"> programmare</label>
+                <!--                 <div class="Item">
+                    <div class="itemContainer">
+                        <input type="checkbox" id="task${counter}" class="checkbox" />
+                     <label for="task${counter}"> ${item.titolo} : ${item.task} </label>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
                 </div> -->
             </div>
             <div class="modalecontainer">

@@ -22,7 +22,7 @@ p{
     margin-bottom: 8px;
 }
 .button{
-    background-color: black;
+    background-color: #161616;
     color: white;
     padding: 8px 16px;
     border: 0px;
@@ -53,7 +53,7 @@ form{
     border: 0px;
     border-radius: 50%;
     font-size: 20px;
-    background-color: black;
+    background-color: #161616;
     color: white;
     margin-top: 8px;
 }
@@ -67,7 +67,11 @@ form{
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-
+    justify-content: space-between;
+}
+.itemContainer{
+    display: flex;
+    align-items: center;
 }
 input[type="checkbox"] {
   width: 20px;
@@ -77,7 +81,7 @@ input[type="checkbox"] {
   margin-right: 12px;
 }
 .modalecontainer{
-    background-color: rgba(0, 0, 0, 0.408);
+    background-color: #1212124d;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -93,4 +97,8 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+.fa-solid {
+    margin-left: 8px;
+    color:#161616;
 }

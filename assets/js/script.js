@@ -30,10 +30,13 @@ form.onsubmit = function (event) {
     // recupero tramite Id il container in cui inserire il list item
 
     Container.innerHTML += `
-        <div class="Item">
-            <input type="checkbox" id="task${counter}" class="checkbox" />
-            <label for="task${counter}"> ${item.titolo} : ${item.task} </label>
-        </div>
+                <div class="Item">
+                    <div class="itemContainer">
+                        <input type="checkbox" id="task${counter}" class="checkbox" />
+                        <label for="task${counter}"> ${item.titolo} : ${item.task} </label>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
     `;
     // inserisco il nuovo list item
 
@@ -62,5 +65,14 @@ form.onsubmit = function (event) {
             }
             check.style.display = "none";
         });
+    });
+
+    const trash = document.querySelectorAll("i");
+    console.log(trash.nextElementSibling);
+    function GoTrash() {
+        trash.parentNode.style.display = "none";
+    }
+    trash.forEach((element) => {
+        element.addEventListener("click", GoTrash);
     });
 };
